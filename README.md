@@ -20,16 +20,16 @@
 |------|----|-------|
 |message|text||
 |image|string||
-|users|references|null: false, foreign_key: true|
-|groups|references|null: false, foreign_key: true|
+|user|references|null: false, foreign_key: true|
+|group|references|null: false, foreign_key: true|
 ### Association
-- belongs_to :groups
-- belongs_to :users
+- belongs_to :group
+- belongs_to :user
 ## groups_usersテーブル
 |Column|Type|Options|
 |------|----|-------|
-|users|references|null: false, foreign_key: true|
-|groups|references|null: false, foreign_key: true|
+|user|references|null: false, foreign_key: true|
+|group|references|null: false, foreign_key: true|
 ### Association
-- belongs_to :groups
-- belongs_to :users
+- belongs_to :group
+- belongs_to :user
